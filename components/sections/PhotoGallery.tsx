@@ -59,7 +59,8 @@ export function PhotoGallery({ onContinue }: PhotoGalleryProps) {
                     alt={photo.caption || ""}
                     fill
                     className="object-cover"
-                    unoptimized
+                    sizes="(max-width: 768px) 50vw, 33vw"
+                    unoptimized={photo.url.endsWith(".gif")}
                   />
                 </div>
 

@@ -101,7 +101,8 @@ export function GardenOfMemories({ onContinue }: GardenOfMemoriesProps) {
                       height={260}
                       className="max-h-full max-w-full object-contain"
                       draggable={false}
-                      unoptimized
+                      sizes="(max-width: 768px) 100vw, 500px"
+                      priority={activeIndex === 0}
                     />
                   </div>
                 )}
